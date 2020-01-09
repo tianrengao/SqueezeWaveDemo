@@ -1,33 +1,37 @@
 
 <html class="gr__google_github_io"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-    <title>Audio samples "</title>
+    <title>SQUEEZEWAVE DEMO</title>
     <link rel="stylesheet" type="text/css" href="./Audio samples from _Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions__files/stylesheet.css">
     <link rel="shortcut icon" href="https://google.github.io/tacotron/images/taco.png">
   </head>
   <body data-gr-c-s-loaded="true">
     <article>
       <header>
-        <h1>SqueezeWave"</h1>
+        <h1>SQUEEZEWAVE: A LIGHTWEIGHT VOCODER WITH WAVEGLOW-LEVEL PERFORMANCE AND 50X FEWER MAC</h1>
       </header>
     </article>
 
     <div><b>Paper:</b> <a href="link">arXiv</a></div>
-    <div><b>Authors:</b> Flora Xue .....</div>
-    <div><b>Abstract:</b> 
+    <div><b>Authors:</b> Flora Xue* Tianren Gao* Bohan Zhai* Daniel Rothchild Bichen Wu1Joseph Gonzalez Kurt Keutzer</div>
+    <div><b>Abstract:
+      Automatic speech synthesis is a challenging task that is becoming increasingly important as edge devices beginto interact with users through speech.   
+      Typical text-to-speech pipelines include a vocoder,  which translatesintermediate audio representations into a waveform. Most existing vocoders are difficult to parallelize, since theyproduce one sample at a time. Recently, (Prenger et al., 2019) proposed WaveGlow, a flow-based feed-forwardvocoder, which can be easily parallelized, but suffers from increased MACs (Multiply-and-Accumulate Operations)over previous models. We present a squeezed version of the WaveGlow vocoder that requires 50x fewer MACSfor inference, with minimal loss in sound quality produced by the resulting model.
+    </b> 
     </div>
 
     <div>
       <h3>Original Waveglow.</h3>
       <table>
-        <tbody><tr><td class="transcript">“LJ0051.wav”</td></tr>
-        <tr><td><audio controls=""><source src="https://github.com/tianrengao/testMOS/blob/master/audio_files/base/LJ001-0051.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
+          <tbody><tr><td class="transcript">“LJ0015.wav”</td></tr>
+          <tr><td><audio controls=""><source src="https://github.com/tianrengao/testMOS/blob/master/audio_files/base/LJ001-0015.wav_synthesis.wav"></audio></td></tr>
+        </tbody></table>
 
       <table>
-        <tbody><tr><td class="transcript">“LJ0015.wav”</td></tr>
-        <tr><td><audio controls=""><source src="https://github.com/tianrengao/testMOS/blob/master/audio_files/base/LJ001-0015.wav_synthesis.wav"></audio></td></tr>
+          <tbody><tr><td class="transcript">“LJ0051.wav”</td></tr>
+          <tr><td><audio controls=""><source src="https://github.com/tianrengao/testMOS/blob/master/audio_files/base/LJ001-0051.wav_synthesis.wav"></audio></td></tr>
       </tbody></table>
+
     </div>
 
 
