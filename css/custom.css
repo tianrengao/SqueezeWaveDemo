@@ -9,7 +9,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #263c4c;
+    color: #360c4c;
 }
 h2, h3, h4, h5, h6 {
     margin-top: 5rem;
@@ -65,11 +65,11 @@ main {
 
 .header-logo img {
   border-radius: 50%;
-  border: 2px solid #E1E1E1;
+  border: 2px solid #E1E0E1;
 }
 
 .header-logo img:hover {
-  border-color: #F1F1F1;
+  border-color: #E1E0E1;
 }
 
 .site-title {
@@ -88,7 +88,7 @@ main {
   display: inline-block;
   margin-bottom: 2rem;
   font-size: 1.6rem;
-  color: #888;
+  color: #788;
 }
 
 .footer-link {
@@ -98,7 +98,7 @@ main {
 .hr {
   height: 1px;
   margin: 2rem 0;
-  background: #E1E1E1;
+  background: #E1E0E1;
   background: -webkit-gradient(linear, left top, right top, from(white), color-stop(#E1E1E1), to(white));
   background: -webkit-linear-gradient(left, white, #E1E1E1, white);
   background: linear-gradient(to right, white, #E1E1E1, white);
@@ -124,7 +124,7 @@ address a {
 
 .avatar-bottom img {
     border-radius: 50%;
-    border: 1px solid #E1E1E1;
+    border: 1px solid #E1E0E1;
     float: left;
     max-width: 100%;
     vertical-align: middle;
@@ -135,7 +135,7 @@ address a {
 }
 
 .avatar-bottom img:hover {
-  border-color: #F1F1F1;
+  border-color: #E1E0E1;
 }
 
 .copyright {
@@ -152,8 +152,8 @@ blockquote {
     padding: 10px 10px 10px 32px;
     box-sizing: border-box;
     font-style: italic;
-    color: #464646;
-    background: #e0e0e0;
+    color: #474646;
+    background: #E1E0E1;
 }
 
 blockquote:before{
@@ -164,7 +164,7 @@ blockquote:before{
     vertical-align: middle;
     content: "\f10d";
     font-family: FontAwesome;
-    color: #e0e0e0;
+    color: #e9e0e0;
     font-size: 22px;
     line-height: 1;
     z-index: 2;
@@ -191,6 +191,6 @@ blockquote p {
 blockquote cite {
     display: block;
     text-align: right;
-    color: #888888;
+    color: #887788;
     font-size: 0.9em;
 }

@@ -16,7 +16,7 @@
 
 	<main role="main">
 		<article itemscope="" itemtype="https://schema.org/BlogPosting">
-            <h1 class="entry-title" itemprop="headline">SQUEEZEWAVE: A LIGHTWEIGHT VOCODER WITH WAVEGLOW-LEVEL PERFORMANCE AND 50X FEWER MAC</h1>
+            <h1 class="entry-title" itemprop="headline">SqueezeWave: High-Quality Efficient Neural Audio Synthesis</h1>
 			
 			<section itemprop="entry-text">
 
@@ -27,18 +27,19 @@
 
 <p>Github: <a href="https://github.com/tianrengao/SqueezeWave">Click me</a></p>
 
-<h3 id="authors">Authors</h3>
+<h4 id="authors">Authors</h4>
 
 <ul>
 By Tianren Gao *, Bohan Zhai *, Flora Xue, Daniel Rothchild, Bichen Wu, Joseph Gonzalez, and Kurt Keutzer (UC Berkeley)
 </ul>
+
+<p><small>* Equal contribution.</small></p>
 
 <h4 id="authors">Abstract</h4>
 <ul>
 Automatic speech synthesis is a challenging task that is becoming increasingly important as edge devices beginto interact with users through speech. Typical text-to-speech pipelines include a vocoder, which translatesintermediate audio representations into an audio waveform. Most existing vocoders are difficult to parallelize sinceeach generated sample is conditioned on previous samples. WaveGlow is a flow-based feed-forward alternativeto these auto-regressive models (Prenger et al., 2019). However, while WaveGlow can be easily parallelized,the model is too expensive for real-time speech synthesis on the edge. This paper presents SqueezeWave, afamily of lightweight vocoders based on WaveGlow that can generate audio of similar quality to WaveGlowwith 61x - 214x fewer MACs. Code, trained models, and generated audio are publicly available athttps://github.com/BohanZhai/SqueezeWave.
 </ul>
 
-<p><small>* Equal contribution.</small></p>
 
 <h4 id="authors">LJ0015</h4>
 
