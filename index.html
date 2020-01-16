@@ -1,294 +1,316 @@
+<!DOCTYPE html>
 
-<html class="gr__google_github_io"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <title>SQUEEZEWAVE DEMO</title>
-    <link rel="stylesheet" type="text/css" href="./Audio samples from _Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions__files/stylesheet.css">
-    <link rel="shortcut icon" href="https://google.github.io/tacotron/images/taco.png">
-  </head>
-  <body data-gr-c-s-loaded="true">
-    <article>
-      <header>
-        <h1>SQUEEZEWAVE: A LIGHTWEIGHT VOCODER WITH WAVEGLOW-LEVEL PERFORMANCE AND 50X FEWER MAC</h1>
-      </header>
-    </article>
+<meta name="generator" content="Hugo 0.55.5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/github.min.css">
+<link rel="stylesheet" href="./css/normalize.css">
+<link rel="stylesheet" href="./css/skeleton.css">
+<link rel="stylesheet" href="./css/custom.css">
 
-    <div><b>Paper:</b> <a href="link">arXiv</a></div>
-    <div><b>Authors:</b> Flora Xue* Tianren Gao* Bohan Zhai* Daniel Rothchild Bichen Wu1Joseph Gonzalez Kurt Keutzer</div>
-    <div><b>Abstract:
-      Automatic speech synthesis is a challenging task that is becoming increasingly important as edge devices beginto interact with users through speech.   
-      Typical text-to-speech pipelines include a vocoder,  which translatesintermediate audio representations into a waveform. Most existing vocoders are difficult to parallelize, since theyproduce one sample at a time. Recently, (Prenger et al., 2019) proposed WaveGlow, a flow-based feed-forwardvocoder, which can be easily parallelized, but suffers from increased MACs (Multiply-and-Accumulate Operations)over previous models. We present a squeezed version of the WaveGlow vocoder that requires 50x fewer MACSfor inference, with minimal loss in sound quality produced by the resulting model.
-    </b> 
-    </div>
+<title>Audio Sample from SqueezeWave</title>
 
-    <div>
-      <h3>Original Waveglow.</h3>
-      <table>
-          <tbody><tr><td class="transcript">“LJ0015.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0015.wav_synthesis.wav"></audio></td></tr>
-        </tbody></table>
+</style></head>
+<body data-gr-c-s-loaded="true"><div id="MathJax_Message" style="display: none;"></div>
 
-      <table>
-          <tbody><tr><td class="transcript">“LJ0051.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0051.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0063.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0063.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0072.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0072.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-            <table>
-          <tbody><tr><td class="transcript">“LJ0079.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0079.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0094.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0094.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0096.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0096.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0102.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0102.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0153.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0153.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0173.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0173.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
+<div class="container">
 
-    </div>
-      
-    <div>
-      <h3>SqueezeWave 128L</h3>
-      <table>
-          <tbody><tr><td class="transcript">“LJ0015.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/128L/LJ001-0015.wav_synthesis.wav"></audio></td></tr>
-        </tbody></table>
+	<main role="main">
+		<article itemscope="" itemtype="https://schema.org/BlogPosting">
+            <h1 class="entry-title" itemprop="headline">SQUEEZEWAVE: A LIGHTWEIGHT VOCODER WITH WAVEGLOW-LEVEL PERFORMANCE AND 50X FEWER MAC</h1>
+			
+			<section itemprop="entry-text">
 
-      <table>
-          <tbody><tr><td class="transcript">“LJ0051.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/128L/LJ001-0051.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0063.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/128L/LJ001-0063.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0072.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/128L/LJ001-0072.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-            <table>
-          <tbody><tr><td class="transcript">“LJ0079.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/128L/LJ001-0079.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0094.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/128L/LJ001-0094.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0096.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/128L/LJ001-0096.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0102.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/128L/LJ001-0102.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0153.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/128L/LJ001-0153.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0173.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/128L/LJ001-0173.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
+<p><br>
+</p>
 
-    </div>
-      
-    <div>
-      <h3>SqueezeWave 128s</h3>
-      <table>
-          <tbody><tr><td class="transcript">“LJ0015.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/128s/LJ001-0015.wav_synthesis.wav"></audio></td></tr>
-        </tbody></table>
+<p>ArXiv: <a href="TODO">arXiv</a></p>
 
-      <table>
-          <tbody><tr><td class="transcript">“LJ0051.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/128s/LJ001-0051.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0063.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/128s/LJ001-0063.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0072.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/128s/LJ001-0072.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-            <table>
-          <tbody><tr><td class="transcript">“LJ0079.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/128s/LJ001-0079.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0094.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/128s/LJ001-0094.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0096.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/128s/LJ001-0096.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0102.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/128s/LJ001-0102.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0153.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/128s/LJ001-0153.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0173.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/128s/LJ001-0173.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
+<p>Github: <a href="https://github.com/tianrengao/SqueezeWave">Click me</a></p>
 
-    </div>
-      
-    <div>
-      <h3>SqueezeWave 64L</h3>
-      <table>
-          <tbody><tr><td class="transcript">“LJ0015.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0015.wav_synthesis.wav"></audio></td></tr>
-        </tbody></table>
+<h3 id="authors">Authors</h3>
 
-      <table>
-          <tbody><tr><td class="transcript">“LJ0051.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0051.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0063.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0063.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0072.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0072.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-            <table>
-          <tbody><tr><td class="transcript">“LJ0079.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0079.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0094.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0094.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0096.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0096.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0102.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0102.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0153.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0153.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0173.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0173.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
+<ul>
+By Tianren Gao *, Bohan Zhai *, Flora Xue, Daniel Rothchild, Bichen Wu, Joseph Gonzalez, and Kurt Keutzer (UC Berkeley)
+</ul>
 
-    </div>
-      
-    <div>
-      <h3>SqueezeWave 64s</h3>
-      <table>
-          <tbody><tr><td class="transcript">“LJ0015.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/64s/LJ001-0015.wav_synthesis.wav"></audio></td></tr>
-        </tbody></table>
+<h4 id="authors">Abstract</h4>
+<ul>
+Automatic speech synthesis is a challenging task that is becoming increasingly important as edge devices beginto interact with users through speech. Typical text-to-speech pipelines include a vocoder, which translatesintermediate audio representations into an audio waveform. Most existing vocoders are difficult to parallelize sinceeach generated sample is conditioned on previous samples. WaveGlow is a flow-based feed-forward alternativeto these auto-regressive models (Prenger et al., 2019). However, while WaveGlow can be easily parallelized,the model is too expensive for real-time speech synthesis on the edge. This paper presents SqueezeWave, afamily of lightweight vocoders based on WaveGlow that can generate audio of similar quality to WaveGlowwith 61x - 214x fewer MACs. Code, trained models, and generated audio are publicly available athttps://github.com/BohanZhai/SqueezeWave.
+</ul>
 
-      <table>
-          <tbody><tr><td class="transcript">“LJ0051.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/64s/LJ001-0051.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0063.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/64s/LJ001-0063.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0072.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/64s/LJ001-0072.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-            <table>
-          <tbody><tr><td class="transcript">“LJ0079.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/64s/LJ001-0079.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0094.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/64s/LJ001-0094.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0096.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/64s/LJ001-0096.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0102.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/64s/LJ001-0102.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0153.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/64s/LJ001-0153.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
-        
-      <table>
-          <tbody><tr><td class="transcript">“LJ0173.wav”</td></tr>
-          <tr><td><audio controls=""><source src="https://tianrengao.github.io/SqueezeWaveDemo/64s/LJ001-0173.wav_synthesis.wav"></audio></td></tr>
-      </tbody></table>
+<p><small>* Equal contribution.</small></p>
 
-    </div>
+<h4 id="authors">LJ0015</h4>
 
+<table><thead>
+<tr>
+
+<th style="text-align: center">Baseline</th>
+<th style="text-align: center">SqueezeWave 128L</th>
+<th style="text-align: center">SqueezeWave 128s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0015.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/128L/LJ001-0015.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/128s/LJ001-0015.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">SqueezeWave 64L</th>
+<th style="text-align: center">SqueezeWave 64s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0015.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64s/LJ001-0015.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+
+
+<h4 id="authors">LJ0051</h4>
+
+<table><thead>
+<tr>
+
+<th style="text-align: center">Baseline</th>
+<th style="text-align: center">SqueezeWave 128L</th>
+<th style="text-align: center">SqueezeWave 128s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0051.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/128L/LJ001-0051.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/128s/LJ001-0051.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">SqueezeWave 64L</th>
+<th style="text-align: center">SqueezeWave 64s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0051.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64s/LJ001-0051.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+
+
+
+<h4 id="authors">LJ0063</h4>
+
+<table><thead>
+<tr>
+
+<th style="text-align: center">Baseline</th>
+<th style="text-align: center">SqueezeWave 128L</th>
+<th style="text-align: center">SqueezeWave 128s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0063.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/128L/LJ001-0063.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/128s/LJ001-0063.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">SqueezeWave 64L</th>
+<th style="text-align: center">SqueezeWave 64s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0063.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64s/LJ001-0063.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+
+
+
+<h4 id="authors">LJ0072</h4>
+
+<table><thead>
+<tr>
+
+<th style="text-align: center">Baseline</th>
+<th style="text-align: center">SqueezeWave 128L</th>
+<th style="text-align: center">SqueezeWave 128s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0072.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/128L/LJ001-0072.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/128s/LJ001-0072.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">SqueezeWave 64L</th>
+<th style="text-align: center">SqueezeWave 64s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0072.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64s/LJ001-0072.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+
+<h4 id="authors">LJ0079</h4>
+
+<table><thead>
+<tr>
+
+<th style="text-align: center">Baseline</th>
+<th style="text-align: center">SqueezeWave 128L</th>
+<th style="text-align: center">SqueezeWave 128s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0079.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/128L/LJ001-0079.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/128s/LJ001-0079.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">SqueezeWave 64L</th>
+<th style="text-align: center">SqueezeWave 64s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0079.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64s/LJ001-0079.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+
+
+<h4 id="authors">LJ0094</h4>
+
+<table><thead>
+<tr>
+
+<th style="text-align: center">Baseline</th>
+<th style="text-align: center">SqueezeWave 128L</th>
+<th style="text-align: center">SqueezeWave 128s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0094.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/128L/LJ001-0094.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/128s/LJ001-0094.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">SqueezeWave 64L</th>
+<th style="text-align: center">SqueezeWave 64s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0094.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64s/LJ001-0094.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+
+<h4 id="authors">LJ0096</h4>
+
+<table><thead>
+<tr>
+
+<th style="text-align: center">Baseline</th>
+<th style="text-align: center">SqueezeWave 128L</th>
+<th style="text-align: center">SqueezeWave 128s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0096.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/128L/LJ001-0096.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/128s/LJ001-0096.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">SqueezeWave 64L</th>
+<th style="text-align: center">SqueezeWave 64s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0096.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64s/LJ001-0096.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+
+<h4 id="authors">LJ0102</h4>
+
+<table><thead>
+<tr>
+
+<th style="text-align: center">Baseline</th>
+<th style="text-align: center">SqueezeWave 128L</th>
+<th style="text-align: center">SqueezeWave 128s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0102.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/128L/LJ001-0102.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/128s/LJ001-0102.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">SqueezeWave 64L</th>
+<th style="text-align: center">SqueezeWave 64s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0102.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64s/LJ001-0102.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+
+<h4 id="authors">LJ0153</h4>
+
+<table><thead>
+<tr>
+
+<th style="text-align: center">Baseline</th>
+<th style="text-align: center">SqueezeWave 128L</th>
+<th style="text-align: center">SqueezeWave 128s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0153.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/128L/LJ001-0153.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/128s/LJ001-0153.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">SqueezeWave 64L</th>
+<th style="text-align: center">SqueezeWave 64s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0153.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64s/LJ001-0153.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+
+<h4 id="authors">LJ00173</h4>
+
+<table><thead>
+<tr>
+
+<th style="text-align: center">Baseline</th>
+<th style="text-align: center">SqueezeWave 128L</th>
+<th style="text-align: center">SqueezeWave 128s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0173.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/128L/LJ001-0173.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/128s/LJ001-0173.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+<table><thead>
+<tr>
+<th style="text-align: center">SqueezeWave 64L</th>
+<th style="text-align: center">SqueezeWave 64s</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0173.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64s/LJ001-0173.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+
+
+			</section>
+		</article>
+	</main>
+
+</div>
 
 </body></html>
