@@ -16,7 +16,7 @@
 
 	<main role="main">
 		<article itemscope="" itemtype="https://schema.org/BlogPosting">
-            <h1 class="entry-title" itemprop="headline">SqueezeWave: High-Quality Efficient Neural Audio Synthesis</h1>
+            <h1 class="entry-title" itemprop="headline">SqueezeWave: Extremely Lightweight Vocoders for On-device Speech Synthesis</h1>
 			
 			<section itemprop="entry-text">
 
@@ -37,8 +37,7 @@ By Tianren Gao *, Bohan Zhai *, Flora Xue, Daniel Rothchild, Bichen Wu, Joseph G
 
 <h4 id="authors">Abstract</h4>
 <ul>
-Automatic speech synthesis is a challenging task that is becoming increasingly important as edge devices beginto interact with users through speech. Typical text-to-speech pipelines include a vocoder, which translatesintermediate audio representations into an audio waveform. Most existing vocoders are difficult to parallelize sinceeach generated sample is conditioned on previous samples. WaveGlow is a flow-based feed-forward alternativeto these auto-regressive models (Prenger et al., 2019). However, while WaveGlow can be easily parallelized,the model is too expensive for real-time speech synthesis on the edge. This paper presents SqueezeWave, afamily of lightweight vocoders based on WaveGlow that can generate audio of similar quality to WaveGlowwith 61x - 214x fewer MACs. Code, trained models, and generated audio are publicly available athttps://github.com/BohanZhai/SqueezeWave.
-</ul>
+Automatic speech synthesis is a challenging task that is becoming increasingly important as edge devices beginto interact with users through speech.   Typical text-to-speech pipelines include a vocoder,  which translatesintermediate audio representations into an audio waveform. Most existing vocoders are difficult to parallelize sinceeach generated sample is conditioned on previous samples. WaveGlow is a flow-based feed-forward alternativeto these auto-regressive models (Prenger et al., 2019).  However, while WaveGlow can be easily parallelized,the model is too expensive for real-time speech synthesis on the edge.  This paper presents SqueezeWave, afamily of lightweight vocoders based on WaveGlow that can generate audio of similar quality to WaveGlowwith 61x - 214x fewer MACs.  Code, trained models, and generated audio are publicly available athttps://github.com/tianrengao/SqueezeWave.</ul>
 
 
 <h4 id="authors">LJ0015</h4>
@@ -48,7 +47,7 @@ Automatic speech synthesis is a challenging task that is becoming increasingly i
 
 <th style="text-align: center">Baseline</th>
 <th style="text-align: center">SqueezeWave 128L</th>
-<th style="text-align: center">SqueezeWave 128s</th>
+<th style="text-align: center">SqueezeWave 128S</th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0015.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -59,7 +58,7 @@ Automatic speech synthesis is a challenging task that is becoming increasingly i
 <table><thead>
 <tr>
 <th style="text-align: center">SqueezeWave 64L</th>
-<th style="text-align: center">SqueezeWave 64s</th>
+<th style="text-align: center">SqueezeWave 64S</th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0015.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -75,7 +74,7 @@ Automatic speech synthesis is a challenging task that is becoming increasingly i
 
 <th style="text-align: center">Baseline</th>
 <th style="text-align: center">SqueezeWave 128L</th>
-<th style="text-align: center">SqueezeWave 128s</th>
+<th style="text-align: center">SqueezeWave 128S</th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0051.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -86,7 +85,7 @@ Automatic speech synthesis is a challenging task that is becoming increasingly i
 <table><thead>
 <tr>
 <th style="text-align: center">SqueezeWave 64L</th>
-<th style="text-align: center">SqueezeWave 64s</th>
+<th style="text-align: center">SqueezeWave 64S</th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0051.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -103,7 +102,7 @@ Automatic speech synthesis is a challenging task that is becoming increasingly i
 
 <th style="text-align: center">Baseline</th>
 <th style="text-align: center">SqueezeWave 128L</th>
-<th style="text-align: center">SqueezeWave 128s</th>
+<th style="text-align: center">SqueezeWave 128S</th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0063.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -114,7 +113,7 @@ Automatic speech synthesis is a challenging task that is becoming increasingly i
 <table><thead>
 <tr>
 <th style="text-align: center">SqueezeWave 64L</th>
-<th style="text-align: center">SqueezeWave 64s</th>
+<th style="text-align: center">SqueezeWave 64S</th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0063.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -131,7 +130,7 @@ Automatic speech synthesis is a challenging task that is becoming increasingly i
 
 <th style="text-align: center">Baseline</th>
 <th style="text-align: center">SqueezeWave 128L</th>
-<th style="text-align: center">SqueezeWave 128s</th>
+<th style="text-align: center">SqueezeWave 128S</th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0072.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -142,7 +141,7 @@ Automatic speech synthesis is a challenging task that is becoming increasingly i
 <table><thead>
 <tr>
 <th style="text-align: center">SqueezeWave 64L</th>
-<th style="text-align: center">SqueezeWave 64s</th>
+<th style="text-align: center">SqueezeWave 64S</th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0072.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -157,7 +156,7 @@ Automatic speech synthesis is a challenging task that is becoming increasingly i
 
 <th style="text-align: center">Baseline</th>
 <th style="text-align: center">SqueezeWave 128L</th>
-<th style="text-align: center">SqueezeWave 128s</th>
+<th style="text-align: center">SqueezeWave 128S</th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0079.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -168,7 +167,7 @@ Automatic speech synthesis is a challenging task that is becoming increasingly i
 <table><thead>
 <tr>
 <th style="text-align: center">SqueezeWave 64L</th>
-<th style="text-align: center">SqueezeWave 64s</th>
+<th style="text-align: center">SqueezeWave 64S</th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0079.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -184,7 +183,7 @@ Automatic speech synthesis is a challenging task that is becoming increasingly i
 
 <th style="text-align: center">Baseline</th>
 <th style="text-align: center">SqueezeWave 128L</th>
-<th style="text-align: center">SqueezeWave 128s</th>
+<th style="text-align: center">SqueezeWave 128S</th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0094.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -195,7 +194,7 @@ Automatic speech synthesis is a challenging task that is becoming increasingly i
 <table><thead>
 <tr>
 <th style="text-align: center">SqueezeWave 64L</th>
-<th style="text-align: center">SqueezeWave 64s</th>
+<th style="text-align: center">SqueezeWave 64S</th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0094.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -210,7 +209,7 @@ Automatic speech synthesis is a challenging task that is becoming increasingly i
 
 <th style="text-align: center">Baseline</th>
 <th style="text-align: center">SqueezeWave 128L</th>
-<th style="text-align: center">SqueezeWave 128s</th>
+<th style="text-align: center">SqueezeWave 128S</th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0096.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -221,7 +220,7 @@ Automatic speech synthesis is a challenging task that is becoming increasingly i
 <table><thead>
 <tr>
 <th style="text-align: center">SqueezeWave 64L</th>
-<th style="text-align: center">SqueezeWave 64s</th>
+<th style="text-align: center">SqueezeWave 64S</th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0096.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -236,7 +235,7 @@ Automatic speech synthesis is a challenging task that is becoming increasingly i
 
 <th style="text-align: center">Baseline</th>
 <th style="text-align: center">SqueezeWave 128L</th>
-<th style="text-align: center">SqueezeWave 128s</th>
+<th style="text-align: center">SqueezeWave 128S</th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0102.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -247,7 +246,7 @@ Automatic speech synthesis is a challenging task that is becoming increasingly i
 <table><thead>
 <tr>
 <th style="text-align: center">SqueezeWave 64L</th>
-<th style="text-align: center">SqueezeWave 64s</th>
+<th style="text-align: center">SqueezeWave 64S</th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0102.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -262,7 +261,7 @@ Automatic speech synthesis is a challenging task that is becoming increasingly i
 
 <th style="text-align: center">Baseline</th>
 <th style="text-align: center">SqueezeWave 128L</th>
-<th style="text-align: center">SqueezeWave 128s</th>
+<th style="text-align: center">SqueezeWave 128S</th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0153.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -273,7 +272,7 @@ Automatic speech synthesis is a challenging task that is becoming increasingly i
 <table><thead>
 <tr>
 <th style="text-align: center">SqueezeWave 64L</th>
-<th style="text-align: center">SqueezeWave 64s</th>
+<th style="text-align: center">SqueezeWave 64S</th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0153.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -288,7 +287,7 @@ Automatic speech synthesis is a challenging task that is becoming increasingly i
 
 <th style="text-align: center">Baseline</th>
 <th style="text-align: center">SqueezeWave 128L</th>
-<th style="text-align: center">SqueezeWave 128s</th>
+<th style="text-align: center">SqueezeWave 128S</th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/pretrain/LJ001-0173.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
@@ -299,7 +298,7 @@ Automatic speech synthesis is a challenging task that is becoming increasingly i
 <table><thead>
 <tr>
 <th style="text-align: center">SqueezeWave 64L</th>
-<th style="text-align: center">SqueezeWave 64s</th>
+<th style="text-align: center">SqueezeWave 64S</th>
 </tr></thead><tbody>
 <tr>
 <td style="text-align: center"><audio controls="controls" eq-attached="true"><source src="https://tianrengao.github.io/SqueezeWaveDemo/64L/LJ001-0173.wav_synthesis.wav" autoplay="">Your browser does not support the audio element.</audio></td>
